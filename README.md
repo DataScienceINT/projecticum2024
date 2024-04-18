@@ -16,8 +16,8 @@ The model will be developed in Python using the [spaCy](https://spacy.io/) libra
 We recommend iterations of annotation/training to see how data collection improves performance.
 
 Deliverables:
--	Trained NER model + training database
--	List and definition of entities recognized by the model
--	F1 score (cross validation) per entity
--	All code and materials generated backed up in this repo + short summary of hurdles encountered
+-	Trained NER model + training database 
+-	List and definition of entities recognized by the model (in directory reporting)
+-	F1 score (cross validation) per entity (in directory reporting)
+-	All code and materials generated backed up in this repo (in directory code) + short summary of hurdles encountered (in directory reporting)
 
