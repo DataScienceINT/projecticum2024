@@ -5,6 +5,8 @@ This is the GitHub repository for the project from the Data Science Innovative T
 ## Basic information
 The goal of the project is to develop a small NER model to identify concepts from Materials and Methods in scientific literature mentioning parameters for PBPK models.
 
+Some extra information about PBPK models, their aim and their development is available in the background directory.
+
 The model will be developed in Python using the [spaCy](https://spacy.io/) library, with a [scispaCy](https://allenai.github.io/scispacy/) model as a base.
 
 ## Training data
