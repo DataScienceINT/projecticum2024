@@ -7,15 +7,16 @@ The goal of the project is to develop a small NER model to identify concepts fro
 
 Some extra information about PBPK models, their aim and their development is available in the background directory.
 
-The model will be developed in Python using the [spaCy](https://spacy.io/) library, with a [scispaCy](https://allenai.github.io/scispacy/) model as a base.
+## Tools
+The model will be developed in Python using the [spaCy](https://spacy.io/) library, with a [scispaCy](https://allenai.github.io/scispacy/) model as a base. A [Prodigy](https://prodi.gy/) license key was given to the students for NER annotation and should **not** be made visible in any public location. We recommend to use Prodigy in a [conda](https://docs.anaconda.com/free/miniconda/) environment (with a recent Python version, e.g. 3.10), and to add "?session=yourfirstname" at the end of the localhost url to keep track of who annotated in case datasets need to be merged.
 
 ## Training data
-- A training database will be developed using articles identified in [Towards harmonization of test methods for in vitro hepatic clearance studies](https://ars.els-cdn.com/content/image/1-s2.0-S0887233319305909-mmc1.xlsx). PDFs for these articles can be found in the data directory. Partial extraction of text as been performed already, but students can contribute [here](https://aryastark.ontoxnams-hu.src.surf-hosted.nl/) (Note: Add "?session=yourfirstname" at the end of the url. Username and password are your first name). The full text database will be uploaded in the data directory as well. Note that more articles can be collected, depending on progress.
+- A training database was be developed using articles identified in [Towards harmonization of test methods for in vitro hepatic clearance studies](https://ars.els-cdn.com/content/image/1-s2.0-S0887233319305909-mmc1.xlsx). PDFs for these articles can be found in the data directory. Extraction of text as been performed already and stored in the file data/projecticum_dataset.jsonl.  The full text database will be uploaded in the data directory as well. Note that more articles can be collected, depending on progress.
 - The type of entities to be collected needs to be listed and defined.
-- [Prodigy](https://prodi.gy/) will then be used to collect NER annotations - license number is available upon request but shoould **not** be made visible in any public location. 
+- Prodigy will then be used to collect NER annotations.
 - From these annotations, an NER model can then be [trained](https://spacy.io/usage/training).
 
-We recommend iterations of annotation/training to see how data collection improves performance.
+We recommend iterations of annotation/training to see how data collection improves performance. Intermediate models can be trained using [Prodigy](https://prodi.gy/features/training) directly.
 
 ## Deliverables
 -	Trained NER model + training database 
